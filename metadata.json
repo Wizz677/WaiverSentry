@@ -1,5 +1,5 @@
 {
-  "name": "waiver-sentry",
+  "name": "WaiverSentry",
   "description": "A high-fidelity cybersecurity process exception and policy waiver management registry, incorporating automated risk scoring, GRC compliance visibility, and server-side AI-enabled intelligence.",
   "requestFramePermissions": [],
   "majorCapabilities": [

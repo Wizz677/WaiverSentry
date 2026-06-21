@@ -1,15 +1,13 @@
 services:
   - type: web
     name: waiver-sentry-app
-    env: docker
+    env: node
     plan: free
-    region: oregon 
-    # Render binds the port specified via standard PORT variable or Expose
-    # Since the applet environment uses port 3000, we explicitly denote it here too.
+    region: oregon
+    buildCommand: npm install && npm run build
+    startCommand: npm start
     envVars:
       - key: PORT
         value: "3000"
-      # IMPORTANT: If your app uses Gemini or other APIs, you must supply these secrets in the Render Dashboard.
-      # We define them here as sync: false to remind you they need to be populated.
-      - key: GEMINI_API_KEY
-        sync: false
+      - key: NODE_VERSION
+        value: "20"
