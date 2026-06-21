@@ -1,11 +1,9 @@
-<div align="center">
+# Exception Tracking System
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+## Architecture Decisions
 
-  <h1>Built with AI Studio</h2>
+While the reference stack suggested FastAPI/PostgreSQL/Celery, this implementation uses Express with equivalent modular services.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+Workflow processing, risk evaluation, alert generation, and reporting remain completely decoupled and deterministic.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+The architecture preserves the same separation of concerns while optimizing development velocity during the hackathon.
